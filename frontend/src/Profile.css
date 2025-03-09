@@ -1,0 +1,318 @@
+/* Profile Page Container */
+.profile-page {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.profile-page:hover {
+    box-shadow: 0 0 20px rgba(247, 6, 155, 0.6), 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Profile Header */
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.profile-header h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Picture Section */
+.profile-picture-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture-section img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Circle shape */
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.profile-picture-section input[type="file"] {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+/* User Info Section */
+.user-info-section {
+    margin-bottom: 30px;
+}
+
+.user-info-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.user-info-section input:focus {
+    border-color: rgba(255, 255, 255, 0.6);
+    outline: none;
+}
+
+.user-info-section button {
+    background-color: rgba(0, 123, 255, 0.8);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    width: 150px; /* Fixed width */
+    margin: 5px 0; /* Spacing between buttons */
+    text-align: center; /* Center text */
+}
+
+.user-info-section button:hover {
+    background-color: rgba(0, 86, 179, 0.8);
+}
+
+/* Pets Section */
+.pets-section {
+    margin-bottom: 30px;
+}
+
+.pets-section h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pet-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pet-card p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.pet-card button {
+    background-color: rgba(255, 193, 7, 0.8);
+    color: #333;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+    width: 150px; /* Fixed width */
+    text-align: center; /* Center text */
+}
+
+.pet-card button:hover {
+    background-color: rgba(224, 168, 0, 0.8);
+}
+
+/* Add New Pet Section */
+.add-pet-section {
+    margin-bottom: 30px;
+}
+
+.add-pet-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.add-pet-section button {
+    background-color: rgba(40, 167, 69, 0.8);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    width: 150px; /* Fixed width */
+    margin: 5px 0; /* Spacing between buttons */
+    text-align: center; /* Center text */
+}
+
+.add-pet-section button:hover {
+    background-color: rgba(33, 136, 56, 0.8);
+}
+
+/* Adoption Preferences Section */
+.adoption-preferences-section {
+    margin-bottom: 30px;
+}
+
+.adoption-preferences-section h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.adoption-preferences-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+/* Adoption History Section */
+.adoption-history-section {
+    margin-bottom: 30px;
+}
+
+.adoption-history-section h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.adoption-history-section p {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* Messaging Section */
+.messaging-section {
+    margin-bottom: 30px;
+}
+
+.messaging-section h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.messaging-section input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.messaging-section button {
+    background-color: rgba(40, 167, 69, 0.8);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    width: 150px; /* Fixed width */
+    margin: 5px 0; /* Spacing between buttons */
+    text-align: center; /* Center text */
+}
+
+.messaging-section button:hover {
+    background-color: rgba(33, 136, 56, 0.8);
+}
+
+/* Security & Account Section */
+.security-section {
+    margin-bottom: 30px;
+}
+
+.security-section h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.security-section input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+.security-section .button-container {
+    display: flex; /* Use flexbox for spacing */
+    gap: 20px; /* Space between buttons */
+}
+.security-section button {
+    background-color: rgba(220, 53, 69, 0.8);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    width: 150px; /* Fixed width */
+    text-align: center; /* Center text */
+}
+
+.security-section button.change-password {
+    margin-right: 20px; /* Space between "Change Password" and "Delete Account" */
+}
+
+.security-section button:hover {
+    background-color: rgba(200, 35, 51, 0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-page {
+        padding: 15px;
+    }
+
+    .profile-header h1 {
+        font-size: 2rem;
+    }
+
+    .pets-section h2,
+    .adoption-preferences-section h2,
+    .adoption-history-section h2,
+    .messaging-section h2,
+    .security-section h2 {
+        font-size: 1.5rem;
+    }
+}

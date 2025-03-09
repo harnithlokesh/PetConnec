@@ -1,0 +1,128 @@
+/* Center the container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: none;
+  font-family: 'Arial', sans-serif;
+  padding: 10px;
+}
+
+/* Compact glass effect box */
+.register-box {
+  width: 360px; /* Reduced width */
+  padding: 24px; /* Less padding */
+  border-radius: 16px; /* Slightly reduced */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  border: 1.5px solid rgb(209, 209, 209);
+  transition: border 0.3s ease-in-out;
+}
+
+/* Glow effect on hover */
+.register-box:hover {
+  border: 1.5px solid rgba(53, 139, 168, 0.7);
+  box-shadow: 0 0 10px rgba(22, 81, 120, 0.3);
+}
+
+/* Register heading */
+.register-box h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #242323;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inputs and select */
+input, select {
+  margin: 8px 0;
+  padding: 10px;
+  font-size: 14px; /* Smaller font */
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  color: #333;
+  width: 100%;
+  transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  appearance: none;
+  cursor: pointer;
+}
+
+/* Custom dropdown arrow */
+select {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M7 10l5 5 5-5H7z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+}
+
+/* Glow effect on focus */
+input:focus, select:focus {
+  border: 1.5px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 6px rgba(188, 184, 184, 0.3);
+  outline: none;
+}
+
+/* Dropdown menu */
+select option {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  color: #333;
+  border: none;
+}
+
+/* Placeholder text color */
+input::placeholder {
+  color: #666;
+}
+
+/* Button styling */
+button {
+  width: 85%;
+  padding: 10px;
+  margin: 8px auto;
+  background-color: #3182ce;
+  color: white;
+  font-weight: 600;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  font-family: 'Arial', sans-serif;
+  border: none;
+  font-size: 14px;
+}
+
+/* Button hover effect */
+button:hover {
+  background: #0056b3;
+  box-shadow: 0 0 8px rgba(49, 130, 206, 0.5);
+}
+
+/* Login link */
+.login-link {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #333;
+}
+
+.login-link a {
+  color: #3182ce;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

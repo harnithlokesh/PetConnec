@@ -1,0 +1,87 @@
+/* PetDetails.css */
+.pet-details-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align content at the top */
+    min-height: 100vh; /* Allow scrolling only for content */
+    padding: 20px;
+}
+
+.pet-details-container {
+    max-width: 500px;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+/* Adjust image size */
+.pet-details-image {
+    width: 40%;
+    max-width: 125px;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pet-details-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pet-details-type {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.pet-details-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+/* Adopt button styling */
+.adopt-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.adopt-button:hover {
+    background: linear-gradient(135deg, #ff4e85, #ff5a92);
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .pet-details-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .pet-details-image {
+        width: 35%;
+        max-width: 100px;
+    }
+
+    .pet-details-name {
+        font-size: 1.6rem;
+    }
+
+    .pet-details-type {
+        font-size: 1rem;
+    }
+}

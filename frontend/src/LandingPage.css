@@ -1,0 +1,260 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.landing-container {
+  text-align: center;
+  background: none;
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+  position: relative;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+/* Logo */
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+/* Navigation */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  flex: 2;
+  justify-content: center;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+  padding: 10px 15px;
+}
+
+.nav-links a:hover {
+  color: #ffcccb;
+}
+
+/* Profile Container */
+.profile-container {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+  text-align: right;
+  z-index: 150;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: 15px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 180px;
+  max-width: 250px;
+  min-width: 150px;
+  white-space: nowrap;
+  overflow: visible;
+  z-index: 200;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  background: white;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: #ff6a88;
+  display: block;
+  padding: 10px;
+}
+
+.dropdown-menu li:hover {
+  background: #ffcccb;
+}
+
+.dropdown-menu a:hover {
+  color: black;
+}
+
+/* Hero Section */
+.hero {
+  margin-top: 120px;
+  padding: 50px 20px;
+  box-sizing: border-box;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+/* Buttons */
+.cta-button, .adopt-button, .video-button {
+  background: white;
+  color: #ff6a88;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  
+  /* Ensuring uniform button size */
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto; /* Ensures even spacing */
+  padding: 10px 15px; /* Added padding */
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Ensures text doesn't overflow */
+  text-overflow: ellipsis; /* Adds "..." if text overflows */
+  line-height: normal; /* Ensures proper text alignment */
+}
+
+.cta-button:hover, .adopt-button:hover, .video-button:hover {
+  background: #ffcccb;
+  color: black;
+}
+
+
+/* Video Popup */
+.video-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+
+.video-popup.active {
+  display: flex;
+}
+
+.video-container {
+  width: 80%;
+  max-width: 800px;
+  border-radius: 10px;
+  position: relative;
+  background: black;
+  padding: 15px;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+}
+
+.close-popup {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .profile-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .cta-button, .adopt-button, .video-button {
+    width: 160px; /* Smaller buttons for mobile */
+    height: 45px;
+    font-size: 14px;
+    line-height: 45px;
+  }
+
+  .video-container iframe {
+    height: 300px;
+  }
+}

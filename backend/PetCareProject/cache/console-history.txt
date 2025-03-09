@@ -1,0 +1,3 @@
+await petCareRewards.rewardUser(user.address);
+const [user] = await ethers.getSigners();
+const petCareRewards = await ethers.getContractAt("PetCareRewards", "0x072A4F171Fb45d3575F607e3EC173e2d8eC3ab9F");

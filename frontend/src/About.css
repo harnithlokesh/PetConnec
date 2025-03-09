@@ -1,0 +1,60 @@
+/* Center the About Page */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    color: white; /* Text color */
+    background: rgba(255, 192, 203, 0.2); /* Soft pink translucent background */
+    backdrop-filter: blur(5px); /* Light blur for smooth effect */
+}
+
+/* iOS-Style Glassmorphism Box */
+.about-box {
+    background: rgba(255, 255, 255, 0.15); /* Translucent white */
+    border-radius: 20px;
+    padding: 40px;
+    width: 80%;
+    max-width: 600px;
+    backdrop-filter: blur(20px); /* Stronger blur for glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle frosted border */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+/* Styling for the heading */
+.about-box h1 {
+    font-size: 2.5rem;
+    color: #ff6a88;
+    margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+.about-box p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 20px;
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .about-box {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .about-box h1 {
+        font-size: 2rem;
+    }
+
+    .about-box p {
+        font-size: 1rem;
+    }
+}

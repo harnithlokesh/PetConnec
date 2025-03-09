@@ -1,0 +1,177 @@
+/* General container styling - optimized for smaller screens */
+.milestones-container {
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 1.5rem;
+    min-height: 100vh;
+    color: #333;
+    text-align: left;
+    font-family: 'Georgia', serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 3rem; /* Increased space at the top */
+    margin-bottom: 0.5rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Ensure full-page scrolling */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: auto !important;
+}
+
+/* Enable scrolling for milestone container */
+.milestones-wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Center and style the main heading */
+.milestones-container h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 1.5rem; /* Added margin to push the heading down */
+    margin-bottom: 1rem;
+}
+
+/* Transparent box with centered positioning */
+.milestone-form-section,
+.milestones-list-section {
+    background: transparent; /* Made the box transparent */
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1.5rem auto;
+    max-width: 700px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+    text-align: center;
+}
+
+/* Glow effect on hover */
+.milestone-form-section:hover,
+.milestones-list-section:hover {
+    box-shadow: 0 0 15px 4px rgba(206, 106, 234, 0.5);
+}
+
+/* Ensure consistent alignment of labels and input fields */
+.form-group.details-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-group.details-group label {
+    flex: 0 0 120px;
+    text-align: right;
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
+.form-group.details-group textarea,
+.form-group.details-group input {
+    flex: 1;
+    width: calc(100% - 130px);
+    max-width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group.details-group textarea {
+    height: 80px;
+}
+
+/* Ensure all input fields are aligned properly */
+.input-field {
+    width: calc(100% - 130px);
+    max-width: 100%;
+}
+
+/* Style for submit button */
+.submit-button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.submit-button:active {
+    transform: translateY(0);
+}
+
+/* Styling for error and success messages */
+.error, .success {
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.error {
+    color: #ff4d4d;
+}
+
+.success {
+    color: #28a745;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .milestones-container {
+        padding: 1rem;
+    }
+
+    .milestone-form-section,
+    .milestones-list-section {
+        padding: 1rem;
+        margin: 1rem auto;
+        max-width: 90%;
+    }
+
+    .form-group.details-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-group.details-group label {
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    .form-group.details-group input,
+    .form-group.details-group textarea {
+        width: 100%;
+    }
+
+    .input-field {
+        font-size: 0.8rem;
+    }
+
+    .submit-button {
+        padding: 0.5rem 1rem;          
+        font-size: 0.8rem;
+    }
+}
